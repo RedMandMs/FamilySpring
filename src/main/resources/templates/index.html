@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Templates</title>
+	</head>
+	<body>
+	
+		<form th:action="@{/createOntology}" th:object="${ontologyForm}" method="post">
+			<h1>Введите URI онтологии</h1>
+			<input type="text" th:field="*{uri}" />
+			<input type="submit" name="createOntologyBtn" value="Создать онтологию"/>
+		</form>
+		
+		<form action="#" th:action="@{/createClasses}" method="post">
+			<input type="submit" name="createClassesOntologyBtn" value="Создать классы онтологии"/>
+		</form>
+	</body>
+</html>
