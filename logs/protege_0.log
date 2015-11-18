@@ -66,3 +66,813 @@
 2015.11.05 20:52:03.822 MSK INFO: ... saving successful to: E:\”˜∏·‡\Ã‡„ËÒÚ‡ÚÛ‡ 3 ÒÂÏÂÒÚ\Ãƒœ\My project\FamilySpring\FamilySpring.owl -- Protege2Jena.saveAll()
 2015.11.05 20:54:52.305 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (E:\”˜∏·‡\Ã‡„ËÒÚ‡ÚÛ‡ 3 ÒÂÏÂÒÚ\Ãƒœ\My project\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
 2015.11.05 20:54:52.338 MSK INFO: ... saving successful to: E:\”˜∏·‡\Ã‡„ËÒÚ‡ÚÛ‡ 3 ÒÂÏÂÒÚ\Ãƒœ\My project\FamilySpring\FamilySpring.owl -- Protege2Jena.saveAll()
+2015.11.18 03:13:42.087 MSK INFO: *** SYSTEM START ***
+2015.11.18 03:13:43.411 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.18 03:13:43.461 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:13:44.158 MSK INFO:     Completed triple loading after 582 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:13:44.976 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:13:45.797 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:13:45.847 MSK INFO:     Completed triple loading after 45 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:13:46.564 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:13:47.757 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:13:47.827 MSK INFO:     Completed triple loading after 66 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:13:47.828 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:13:47.828 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:13:47.829 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:13:47.830 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:13:47.830 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:13:47.831 MSK INFO: 1 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:13:47.831 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:13:47.844 MSK INFO: 13 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:13:47.844 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:13:47.844 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:13:47.861 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:13:47.865 MSK INFO: 4 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:13:47.865 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:13:47.865 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:13:47.866 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:13:47.866 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:13:47.866 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:13:47.889 MSK INFO: 22 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:13:47.890 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:13:47.890 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:13:47.891 MSK INFO: Updating underlying frames model in 1 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.18 03:14:37.303 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:18:24.346 MSK INFO: *** SYSTEM START ***
+2015.11.18 03:18:24.607 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.18 03:18:25.642 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:18:25.848 MSK INFO:     Completed triple loading after 152 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:18:25.848 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:18:26.637 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:18:26.653 MSK INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:18:26.658 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:18:27.839 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:18:27.866 MSK INFO:     Completed triple loading after 25 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:18:27.866 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:18:27.867 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:18:27.867 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:18:27.868 MSK INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:18:27.868 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:18:27.869 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:18:27.869 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:18:27.871 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:18:27.872 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:18:27.872 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:18:27.882 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:18:27.884 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:18:27.884 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:18:27.884 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:18:27.885 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:18:27.885 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:18:27.885 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:18:27.887 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:18:27.887 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:18:27.888 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:18:27.888 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.18 03:19:22.746 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:21:16.539 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:21:36.487 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:22:21.003 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:22:47.877 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:23:40.862 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:24:02.956 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:25:03.348 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:28:26.862 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.18 03:28:28.273 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:28:28.304 MSK INFO:     Completed triple loading after 31 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:28:28.305 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:28:29.093 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:28:29.105 MSK INFO:     Completed triple loading after 11 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:28:29.106 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:28:30.273 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:28:30.294 MSK INFO:     Completed triple loading after 20 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:28:30.295 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:28:30.296 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:28:30.296 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:28:30.297 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:28:30.297 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:28:30.297 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:28:30.298 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:28:30.300 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:28:30.300 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:28:30.300 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:28:30.300 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:28:30.301 MSK INFO: 1 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:28:30.301 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:28:30.301 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:28:30.301 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:28:30.301 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:28:30.302 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:28:30.304 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:28:30.304 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:28:30.304 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:28:30.305 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.18 03:29:04.109 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:29:44.910 MSK INFO: *** SYSTEM START ***
+2015.11.18 03:29:45.161 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.18 03:29:46.211 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:29:46.423 MSK INFO:     Completed triple loading after 150 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:29:46.424 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:29:47.207 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:29:47.216 MSK INFO:     Completed triple loading after 8 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:29:47.219 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:29:48.400 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:29:48.423 MSK INFO:     Completed triple loading after 22 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:29:48.425 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:29:48.426 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:29:48.427 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:29:48.428 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:29:48.428 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:29:48.429 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:29:48.429 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:29:48.432 MSK INFO: 3 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:29:48.432 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:29:48.433 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:29:48.449 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:29:48.450 MSK INFO: 1 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:29:48.450 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:29:48.451 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:29:48.451 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:29:48.451 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:29:48.451 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:29:48.452 MSK INFO: 1 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:29:48.453 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:29:48.453 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:29:48.453 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.18 03:30:34.834 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:31:28.971 MSK INFO: *** SYSTEM START ***
+2015.11.18 03:31:29.232 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.18 03:31:29.247 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:31:29.430 MSK INFO:     Completed triple loading after 143 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:31:29.847 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:31:30.638 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:31:30.656 MSK INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:31:31.248 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:31:32.425 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:31:32.452 MSK INFO:     Completed triple loading after 25 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:31:32.452 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:31:32.453 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:31:32.453 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:31:32.454 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:31:32.454 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:31:32.454 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:31:32.455 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:31:32.457 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:31:32.457 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:31:32.457 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:31:32.466 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:31:32.468 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:31:32.468 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:31:32.468 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:31:32.468 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:31:32.469 MSK INFO: 1 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:31:32.469 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:31:32.471 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:31:32.471 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:31:32.471 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:31:32.472 MSK INFO: Updating underlying frames model in 1 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.18 03:43:26.755 MSK INFO: *** SYSTEM START ***
+2015.11.18 03:43:27.021 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.18 03:43:27.037 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:43:27.236 MSK INFO:     Completed triple loading after 159 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:43:27.651 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:43:28.437 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:43:28.453 MSK INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:43:29.048 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:43:30.218 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:43:30.250 MSK INFO:     Completed triple loading after 29 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:43:30.252 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:43:30.252 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:43:30.253 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:43:30.255 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:43:30.255 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:43:30.256 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:43:30.257 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:43:30.260 MSK INFO: 3 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:43:30.260 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:43:30.260 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:43:30.269 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:43:30.271 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:43:30.271 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:43:30.271 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:43:30.271 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:43:30.272 MSK INFO: 1 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:43:30.272 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:43:30.274 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:43:30.274 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:43:30.274 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:43:30.274 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.18 03:43:44.494 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:44:18.559 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:44:38.836 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\family.owl -- Protege2Jena.saveAll()
+2015.11.18 03:47:12.595 MSK INFO: *** SYSTEM START ***
+2015.11.18 03:47:12.847 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.18 03:47:14.217 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:47:14.446 MSK INFO:     Completed triple loading after 162 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:47:14.446 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:47:15.233 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:47:15.246 MSK INFO:     Completed triple loading after 11 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:47:15.249 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.18 03:47:16.418 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:47:16.448 MSK INFO:     Completed triple loading after 28 ms -- ProtegeOWLParser.loadTriples()
+2015.11.18 03:47:16.449 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:47:16.449 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.18 03:47:16.450 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:47:16.451 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.18 03:47:16.451 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:47:16.452 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.18 03:47:16.453 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:47:16.456 MSK INFO: 3 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.18 03:47:16.457 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:47:16.457 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.18 03:47:16.467 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:47:16.469 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.18 03:47:16.469 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:47:16.470 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.18 03:47:16.470 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:47:16.470 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.18 03:47:16.470 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:47:16.474 MSK INFO: 3 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.18 03:47:16.474 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:47:16.474 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.18 03:47:16.475 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.18 03:47:22.424 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 00:47:40.806 MSK INFO: *** SYSTEM START ***
+2015.11.19 00:47:41.087 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 00:47:41.106 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:47:41.310 MSK INFO:     Completed triple loading after 163 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:47:42.089 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 00:47:42.901 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:47:42.918 MSK INFO:     Completed triple loading after 16 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:47:44.560 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 00:47:45.740 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:47:45.769 MSK INFO:     Completed triple loading after 28 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:47:45.770 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 00:47:45.770 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 00:47:45.770 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 00:47:45.771 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 00:47:45.771 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 00:47:45.771 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 00:47:45.771 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 00:47:45.772 MSK INFO: 1 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 00:47:45.774 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 00:47:45.774 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 00:47:45.783 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 00:47:45.785 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 00:47:45.785 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 00:47:45.785 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 00:47:45.785 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 00:47:45.786 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 00:47:45.786 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 00:47:45.788 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 00:47:45.788 MSK INFO: Postprocess: Possibly typed entities (1 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 00:47:45.788 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 00:47:45.788 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 00:47:51.627 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 00:49:22.257 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 00:49:22.262 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:49:22.272 MSK INFO:     Completed triple loading after 10 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:49:22.678 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 00:49:23.490 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:49:23.502 MSK INFO:     Completed triple loading after 11 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:49:24.105 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 00:49:25.307 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:49:25.326 MSK INFO:     Completed triple loading after 17 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:49:25.327 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 00:49:25.328 MSK INFO: 1 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 00:49:25.328 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 00:49:25.328 MSK INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 00:49:25.329 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 00:49:25.329 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 00:49:25.329 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 00:49:25.332 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 00:49:25.333 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 00:49:25.333 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 00:49:25.334 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 00:49:25.334 MSK INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 00:49:25.334 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 00:49:25.335 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 00:49:25.335 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 00:49:25.336 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 00:49:25.336 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 00:49:25.339 MSK INFO: 3 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 00:49:25.339 MSK INFO: Postprocess: Possibly typed entities (1 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 00:49:25.339 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 00:49:25.340 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 00:49:32.000 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 00:51:27.206 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 00:51:27.211 MSK SEVERE: Error at loading file file:/C:/ProjectsEclipse/FamilySpring/family.owl -- Could not get input stream for file:/C:/ProjectsEclipse/FamilySpring/family.owl
+	at edu.stanford.smi.protegex.owl.jena.parser.ProtegeOWLParser.getInputStream(Unknown Source)
+	at edu.stanford.smi.protegex.owl.repository.util.XMLBaseExtractor.getXMLBase(Unknown Source)
+	at edu.stanford.smi.protegex.owl.jena.parser.ProtegeOWLParser.run(Unknown Source)
+	at edu.stanford.smi.protegex.owl.jena.JenaKnowledgeBaseFactory.loadKnowledgeBase(Unknown Source)
+	at edu.stanford.smi.protege.model.Project.loadDomainKB(Unknown Source)
+	at edu.stanford.smi.protege.model.Project.createDomainKnowledgeBase(Unknown Source)
+	at edu.stanford.smi.protegex.owl.jena.creator.OwlProjectFromUriCreator.create(Unknown Source)
+	at edu.stanford.smi.protegex.owl.ProtegeOWL.createJenaOWLModelFromURI(Unknown Source)
+	at ru.etu.mdp.family.servises.OntologyService.readOntology(OntologyService.java:60)
+	at ru.etu.mdp.family.presentation.config.WebAppConfig.readOntology(WebAppConfig.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:775)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: C:\ProjectsEclipse\FamilySpring\family.owl (–ù–µ —É–¥–∞–µ—Ç—Å—è –Ω–∞–π—Ç–∏ —É–∫–∞–∑–∞–Ω–Ω—ã–π —Ñ–∞–π–ª)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1038)
+	at edu.stanford.smi.protegex.owl.jena.parser.ProtegeOWLParser.getInputStream(Unknown Source)
+	... 54 more
+
+2015.11.19 00:51:27.219 MSK WARNING: Exception caught  -- Could not get input stream for file:/C:/ProjectsEclipse/FamilySpring/family.owl
+	at edu.stanford.smi.protegex.owl.jena.parser.ProtegeOWLParser.getInputStream(Unknown Source)
+	at edu.stanford.smi.protegex.owl.repository.util.XMLBaseExtractor.getXMLBase(Unknown Source)
+	at edu.stanford.smi.protegex.owl.jena.parser.ProtegeOWLParser.run(Unknown Source)
+	at edu.stanford.smi.protegex.owl.jena.JenaKnowledgeBaseFactory.loadKnowledgeBase(Unknown Source)
+	at edu.stanford.smi.protege.model.Project.loadDomainKB(Unknown Source)
+	at edu.stanford.smi.protege.model.Project.createDomainKnowledgeBase(Unknown Source)
+	at edu.stanford.smi.protegex.owl.jena.creator.OwlProjectFromUriCreator.create(Unknown Source)
+	at edu.stanford.smi.protegex.owl.ProtegeOWL.createJenaOWLModelFromURI(Unknown Source)
+	at ru.etu.mdp.family.servises.OntologyService.readOntology(OntologyService.java:60)
+	at ru.etu.mdp.family.presentation.config.WebAppConfig.readOntology(WebAppConfig.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:775)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:705)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:967)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:869)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:843)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.FileNotFoundException: C:\ProjectsEclipse\FamilySpring\family.owl (–ù–µ —É–¥–∞–µ—Ç—Å—è –Ω–∞–π—Ç–∏ —É–∫–∞–∑–∞–Ω–Ω—ã–π —Ñ–∞–π–ª)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at java.net.URL.openStream(URL.java:1038)
+	at edu.stanford.smi.protegex.owl.jena.parser.ProtegeOWLParser.getInputStream(Unknown Source)
+	... 54 more
+
+2015.11.19 00:55:42.111 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 00:55:42.114 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:55:42.122 MSK INFO:     Completed triple loading after 7 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:55:42.519 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 00:55:43.310 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:55:43.321 MSK INFO:     Completed triple loading after 9 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:55:43.914 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 00:55:45.091 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:55:45.107 MSK INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:55:45.108 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 00:55:45.108 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 00:55:45.108 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 00:55:45.108 MSK INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 00:55:45.108 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 00:55:45.109 MSK INFO: 1 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 00:55:45.109 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 00:55:45.110 MSK INFO: 1 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 00:55:45.110 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 00:55:45.110 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 00:55:45.110 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 00:55:45.111 MSK INFO: 1 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 00:55:45.111 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 00:55:45.111 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 00:55:45.111 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 00:55:45.111 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 00:55:45.111 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 00:55:45.113 MSK INFO: 1 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 00:55:45.113 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 00:55:45.114 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 00:55:45.114 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 00:55:49.733 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 00:59:50.257 MSK INFO: *** SYSTEM START ***
+2015.11.19 00:59:50.507 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 00:59:50.524 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 00:59:50.720 MSK INFO:     Completed triple loading after 156 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:00:00.370 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:00:01.182 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:00:01.194 MSK INFO:     Completed triple loading after 11 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:00:01.784 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:00:02.975 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:00:02.994 MSK INFO:     Completed triple loading after 18 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:00:02.995 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:00:02.995 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:00:02.996 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:00:02.996 MSK INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:00:02.996 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:00:02.997 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:00:02.997 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:00:02.998 MSK INFO: 1 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:00:02.999 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:00:02.999 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:00:03.008 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:00:03.010 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:00:03.010 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:00:03.010 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:00:03.010 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:00:03.010 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:00:03.011 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:00:03.013 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:00:03.013 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:00:03.013 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:00:03.014 MSK INFO: Updating underlying frames model in 1 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 01:00:19.569 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 01:01:53.220 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 01:01:53.224 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:01:53.236 MSK INFO:     Completed triple loading after 12 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:01:53.633 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:01:54.419 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:01:54.428 MSK INFO:     Completed triple loading after 8 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:01:55.030 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:01:56.211 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:01:56.229 MSK INFO:     Completed triple loading after 17 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:01:56.230 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:01:56.231 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:01:56.232 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:01:56.232 MSK INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:01:56.232 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:01:56.233 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:01:56.233 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:01:56.236 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:01:56.236 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:01:56.237 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:01:56.237 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:01:56.237 MSK INFO: 0 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:01:56.237 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:01:56.238 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:01:56.238 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:01:56.238 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:01:56.238 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:01:56.242 MSK INFO: 4 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:01:56.242 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:01:56.242 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:01:56.243 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 01:02:03.617 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 01:03:34.278 MSK INFO: *** SYSTEM START ***
+2015.11.19 01:03:34.529 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 01:03:34.544 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:03:34.730 MSK INFO:     Completed triple loading after 147 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:03:35.171 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:03:35.993 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:03:36.009 MSK INFO:     Completed triple loading after 15 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:03:36.604 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:03:37.849 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:03:37.880 MSK INFO:     Completed triple loading after 30 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:03:37.881 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:03:37.882 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:03:37.882 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:03:37.883 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:03:37.883 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:03:37.883 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:03:37.884 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:03:37.887 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:03:37.887 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:03:37.888 MSK INFO: 1 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:03:37.899 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:03:37.901 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:03:37.901 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:03:37.901 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:03:37.901 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:03:37.902 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:03:37.902 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:03:37.904 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:03:37.904 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:03:37.905 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:03:37.905 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 01:03:52.590 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 01:04:00.913 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
+2015.11.19 01:22:34.155 MSK INFO: *** SYSTEM START ***
+2015.11.19 01:22:34.425 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 01:22:34.441 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:22:34.639 MSK INFO:     Completed triple loading after 157 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:22:35.476 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:22:36.302 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:22:36.322 MSK INFO:     Completed triple loading after 18 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:22:40.169 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 01:22:41.375 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:22:41.397 MSK INFO:     Completed triple loading after 21 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 01:22:41.397 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:22:41.398 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 01:22:41.399 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:22:41.399 MSK INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 01:22:41.400 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:22:41.400 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 01:22:41.401 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:22:41.403 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 01:22:41.404 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:22:41.404 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 01:22:41.416 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:22:41.418 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 01:22:41.418 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:22:41.418 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 01:22:41.418 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:22:41.419 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 01:22:41.419 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:22:41.420 MSK INFO: 1 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 01:22:41.420 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:22:41.420 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 01:22:41.421 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 02:12:42.792 MSK INFO: *** SYSTEM START ***
+2015.11.19 02:12:43.058 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 02:12:43.073 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:12:43.262 MSK INFO:     Completed triple loading after 150 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:12:43.983 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 02:12:44.809 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:12:44.824 MSK INFO:     Completed triple loading after 14 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:12:45.745 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 02:12:46.917 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:12:46.943 MSK INFO:     Completed triple loading after 25 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:12:46.944 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 02:12:46.944 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 02:12:46.944 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 02:12:46.945 MSK INFO: 1 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 02:12:46.945 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 02:12:46.945 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 02:12:46.946 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 02:12:46.948 MSK INFO: 2 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 02:12:46.948 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 02:12:46.948 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 02:12:46.959 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 02:12:46.962 MSK INFO: 1 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 02:12:46.962 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 02:12:46.962 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 02:12:46.962 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 02:12:46.963 MSK INFO: 1 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 02:12:46.963 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 02:12:46.966 MSK INFO: 3 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 02:12:46.966 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 02:12:46.966 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 02:12:46.967 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 02:14:34.402 MSK INFO: *** SYSTEM START ***
+2015.11.19 02:14:34.680 MSK WARNING: [Local Folder Repository] The specified file must be a directory. (C:\ProjectsEclipse\FamilySpring\plugins\edu.stanford.smi.protegex.owl) -- LocalFolderRepository.update()
+2015.11.19 02:14:34.695 MSK INFO: Loading triples from: file:/C:/ProjectsEclipse/FamilySpring/family.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:14:34.890 MSK INFO:     Completed triple loading after 154 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:14:35.309 MSK INFO: Importing http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl from location: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 02:14:36.097 MSK INFO: Loading triples from: http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:14:36.109 MSK INFO:     Completed triple loading after 11 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:14:36.698 MSK INFO: Importing http://swrl.stanford.edu/ontologies/3.3/swrla.owl from location: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- AbstractOWLModel.loadImportedAssertions()
+2015.11.19 02:14:37.868 MSK INFO: Loading triples from: http://swrl.stanford.edu/ontologies/3.3/swrla.owl -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:14:37.897 MSK INFO:     Completed triple loading after 28 ms -- ProtegeOWLParser.loadTriples()
+2015.11.19 02:14:37.898 MSK INFO: Postprocess: Process entities with incorrect Java type (0 entities) ...  -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 02:14:37.899 MSK INFO: 0 ms
+ -- TriplePostProcessor.processFramesWithWrongJavaType()
+2015.11.19 02:14:37.900 MSK INFO: Postprocess: Process metaclasses (3 metaclasses) ...  -- TriplePostProcessor.processMetaclasses()
+2015.11.19 02:14:37.900 MSK INFO: 0 ms
+ -- TriplePostProcessor.processMetaclasses()
+2015.11.19 02:14:37.901 MSK INFO: Postprocess: Process subclasses of rdf:List (1 classes) ...  -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 02:14:37.901 MSK INFO: 0 ms
+ -- TriplePostProcessor.processSubclassesOfRdfList()
+2015.11.19 02:14:37.902 MSK INFO: Postprocess: Instances with multiple types (7 instances) ...  -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 02:14:37.907 MSK INFO: 4 ms
+ -- TriplePostProcessor.processInstancesWithMultipleTypes()
+2015.11.19 02:14:37.907 MSK INFO: Postprocess: Add inferred superclasses ...  -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 02:14:37.907 MSK INFO: 0 ms
+ -- TriplePostProcessor.processInferredSuperclasses()
+2015.11.19 02:14:37.919 MSK INFO: Postprocess: Process orphan classes (5 classes) ...  -- TriplePostProcessor.processOrphanClses()
+2015.11.19 02:14:37.922 MSK INFO: 2 ms
+ -- TriplePostProcessor.processOrphanClses()
+2015.11.19 02:14:37.923 MSK INFO: Postprocess: Generalized Concept Inclusion (0 axioms) ...  -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 02:14:37.923 MSK INFO: 0 ms
+ -- TriplePostProcessor.processGeneralizedConceptInclusions()
+2015.11.19 02:14:37.923 MSK INFO: Postprocess: Abstract classes...  -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 02:14:37.923 MSK INFO: 0 ms
+ -- TriplePostProcessor.processAbstractClasses()
+2015.11.19 02:14:37.924 MSK INFO: Postprocess: Domain and range of properties...  -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 02:14:37.926 MSK INFO: 2 ms
+ -- TriplePostProcessor.processDomainAndRange()
+2015.11.19 02:14:37.926 MSK INFO: Postprocess: Possibly typed entities (0 resources) ...  -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 02:14:37.926 MSK INFO: 0 ms
+ -- TriplePostProcessor.processPossiblyTypedResources()
+2015.11.19 02:14:37.927 MSK INFO: Updating underlying frames model in 0 ms -- ProtegeOWLParser.doFinalPostProcessing()
+2015.11.19 02:14:43.872 MSK INFO: ... saving successful to: C:\ProjectsEclipse\FamilySpring\test.owl -- Protege2Jena.saveAll()
