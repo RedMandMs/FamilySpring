@@ -8,7 +8,7 @@
 	</head>
 	<body>
 	
-		<form th:action="@{/createOntology}" th:object="${ontologyForm}" method="post">
+		<form th:action="@{/createEmptyOntology}" th:object="${ontologyForm}" method="post">
 			<h1>Введите URI онтологии</h1>
 			<input type="text" th:field="*{uri}" />
 			<input type="submit" name="createOntologyBtn" value="Создать онтологию"/>
