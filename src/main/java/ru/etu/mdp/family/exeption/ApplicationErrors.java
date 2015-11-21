@@ -5,6 +5,10 @@ public enum ApplicationErrors {
     CREATING_ONTOLOGY_ERROR("Ошибка создания онтологии"),
     READING_ONTOLOGY_ERROR("Ошибка считывания онтологии"),
     SAVING_ONTOLOGY_ERROR("Ошибка сохранения онтологии"),
+    READING_PROPERTY_ERROR("Ошибка считывания поля объекта"),
+    RECORDING_PROPERTY_ERROR("Ошибка записи поля объекта"),
+    REMOVING_PROPERTY_ERROR("Ошибка удаления поля объекта"),
+    ADDING_PROPERTY_ERROR("Ошибка добавления поля объекта"),
     INCORRECT_CONVERT("Ошибка приведения типов!");
 
     ApplicationErrors(String message) {

@@ -3,11 +3,11 @@ package ru.etu.mdp.family.servises;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import ru.etu.mdp.family.domain.ChangePropertyForm;
 import ru.etu.mdp.family.exeption.ApplicationErrors;
 import ru.etu.mdp.family.exeption.ApplicationException;
 
 import edu.stanford.smi.protegex.owl.model.OWLDatatypeProperty;
-import edu.stanford.smi.protegex.owl.model.OWLIndividual;
 
 /**
  *
@@ -20,43 +20,132 @@ public class DataTypePropertyService {
     @Autowired
     private OntologyService ontologyService;
 
-    public void setProperty(String nameIndividual, String nameProperty, String value)
+    /**
+     * Получить значение поля
+     *
+     * @param changePropertyForm
+     * @throws ApplicationException
+     */
+    public Object getPropertyValue(ChangePropertyForm changePropertyForm)
         throws ApplicationException {
 
-        OWLDatatypeProperty property = OntologyService.owlModel
-            .getOWLDatatypeProperty(OntologyService.OWL_URI + nameProperty);
+        try {
+            getNeсessaryData(changePropertyForm);
+            return changePropertyForm.getIndividual()
+                .getPropertyValue(changePropertyForm.getDataTypeProperty());
+        } catch (Exception ex) {
+            throw new ApplicationException(ApplicationErrors.READING_PROPERTY_ERROR);
+        }
 
-        OWLIndividual individual = OntologyService.owlModel
-            .getOWLIndividual(OntologyService.OWL_URI + nameIndividual);
+    }
 
-        TypeProperty typeProperty = TypeProperty
-            .findByLocalName(property.getRange().getLocalName());
+    /**
+     * Удалить значение поля
+     *
+     * @param changePropertyForm
+     * @throws ApplicationException
+     */
+    public void deletePropertyValue(ChangePropertyForm changePropertyForm)
+        throws ApplicationException {
 
         try {
-            switch (typeProperty) {
-                case BOOLEAN:
-                    individual.setPropertyValue(property, Boolean.valueOf(value));
-                    break;
-                case INTEGER:
-                    individual.setPropertyValue(property, Integer.valueOf(value));
-                    break;
-                case STRING:
-                    individual.setPropertyValue(property, value);
-                    break;
-                case FLOAT:
-                    individual.setPropertyValue(property, Float.valueOf(value));
-                    break;
-                default:
-                    individual.setPropertyValue(property, value);
-                    break;
-            }
-        } catch (NumberFormatException ex) {
-            throw new ApplicationException(ApplicationErrors.INCORRECT_CONVERT);
+            getNeсessaryData(changePropertyForm);
+
+            changePropertyForm.getIndividual()
+                .setPropertyValue(changePropertyForm.getDataTypeProperty(), null);
+        } catch (Exception e) {
+            throw new ApplicationException(ApplicationErrors.REMOVING_PROPERTY_ERROR);
         }
 
         ontologyService.saveOntology();
     }
 
+    /**
+     * Установить значение поля
+     *
+     * @param changePropertyForm
+     * @throws ApplicationException
+     */
+    public void setPropertyValue(ChangePropertyForm changePropertyForm)
+        throws ApplicationException {
+
+        try {
+            getNeсessaryData(changePropertyForm);
+
+            changePropertyForm.getIndividual().setPropertyValue(
+                changePropertyForm.getDataTypeProperty(),
+                changePropertyForm.getDataTypePropertyValue());
+        } catch (Exception e) {
+            throw new ApplicationException(ApplicationErrors.RECORDING_PROPERTY_ERROR);
+        }
+
+        ontologyService.saveOntology();
+    }
+
+    /**
+     * Подгрузка необходимых данных для выполнения операции изменением полей
+     *
+     * @param changePropertyForm
+     * @throws ApplicationException
+     */
+    private void getNeсessaryData(ChangePropertyForm changePropertyForm)
+        throws ApplicationException {
+
+        if (changePropertyForm.getNameProperty() != null
+            && !changePropertyForm.getNameProperty().isEmpty()) {
+            changePropertyForm
+                .setDataTypeProperty(OntologyService.owlModel.getOWLDatatypeProperty(
+                    OntologyService.OWL_URI + changePropertyForm.getNameProperty()));
+        }
+
+        if (changePropertyForm.getNameIndividual() != null
+            && !changePropertyForm.getNameIndividual().isEmpty()) {
+            changePropertyForm.setIndividual(OntologyService.owlModel.getOWLIndividual(
+                OntologyService.OWL_URI + changePropertyForm.getNameIndividual()));
+        }
+
+        if (changePropertyForm.getNewValue() != null
+            && !changePropertyForm.getNewValue().isEmpty()) {
+
+            TypeProperty typeProperty = TypeProperty.findByLocalName(
+                changePropertyForm.getDataTypeProperty().getRange().getLocalName());
+
+            try {
+                switch (typeProperty) {
+                    case BOOLEAN:
+                        changePropertyForm.setDataTypePropertyValue(
+                            Boolean.valueOf(changePropertyForm.getNewValue()));
+                        break;
+                    case INTEGER:
+                        changePropertyForm.setDataTypePropertyValue(
+                            Integer.valueOf(changePropertyForm.getNewValue()));
+                        break;
+                    case STRING:
+                        changePropertyForm
+                            .setDataTypePropertyValue(changePropertyForm.getNewValue());
+                        break;
+                    case FLOAT:
+                        changePropertyForm.setDataTypePropertyValue(
+                            Float.valueOf(changePropertyForm.getNewValue()));
+                        break;
+                    default:
+                        changePropertyForm
+                            .setDataTypePropertyValue(changePropertyForm.getNewValue());
+                        break;
+                }
+            } catch (NumberFormatException ex) {
+                throw new ApplicationException(ApplicationErrors.INCORRECT_CONVERT);
+            }
+        }
+
+    }
+
+    /**
+     * Получить тип поля
+     *
+     * @param nameProperty
+     * @return
+     */
     public String getTypeProperty(String nameProperty) {
 
         OWLDatatypeProperty property = OntologyService.owlModel

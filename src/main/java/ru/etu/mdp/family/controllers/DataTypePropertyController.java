@@ -20,9 +20,7 @@ public class DataTypePropertyController {
     public String changeDataTypeProperty(
         @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyTestForm)
             throws ApplicationException {
-        dataTypePropertyService.setProperty(changePropertyTestForm.getNameIndividual(),
-            changePropertyTestForm.getNameProperty(),
-            changePropertyTestForm.getNewValue());
+        dataTypePropertyService.setPropertyValue(changePropertyTestForm);
         return "redirect:/";
 
     }

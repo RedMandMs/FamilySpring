@@ -16,13 +16,27 @@ public class ObjectPropertyController {
     @Autowired
     private ObjectPropertyService objectPropertyService;
 
-    @RequestMapping(value = "/changeObjectProperty", method = RequestMethod.POST)
-    public String changeObjectProperty(
-        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyTestForm)
+    @RequestMapping(value = "/setObjectPropertyValue/", method = RequestMethod.POST)
+    public String setObjectPropertyValue(
+        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyForm)
             throws ApplicationException {
-        objectPropertyService.setProperty(changePropertyTestForm.getNameIndividual(),
-            changePropertyTestForm.getNameProperty(),
-            changePropertyTestForm.getNewValue());
+        objectPropertyService.setPropertyValue(changePropertyForm);
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/removeObjectPropertyValue/", method = RequestMethod.POST)
+    public String removeObjectPropertyValue(
+        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyForm)
+            throws ApplicationException {
+        objectPropertyService.removeOnePropertyValue(changePropertyForm);
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/clearObjectPropertyValue/", method = RequestMethod.POST)
+    public String clearObjectPropertyValue(
+        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyForm)
+            throws ApplicationException {
+        objectPropertyService.clearPropertyValue(changePropertyForm);
         return "redirect:/";
     }
 }
