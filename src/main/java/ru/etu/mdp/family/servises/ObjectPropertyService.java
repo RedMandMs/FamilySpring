@@ -5,7 +5,7 @@ import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ru.etu.mdp.family.domain.ChangePropertyForm;
+import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.exeption.ApplicationErrors;
 import ru.etu.mdp.family.exeption.ApplicationException;
 
@@ -23,7 +23,7 @@ public class ObjectPropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public OWLIndividual getPropertyValue(ChangePropertyForm changePropertyForm)
+    public OWLIndividual getPropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -44,7 +44,7 @@ public class ObjectPropertyService {
      */
     @SuppressWarnings("unchecked")
     public Collection<OWLIndividual> getAllPropertyValues(
-        ChangePropertyForm changePropertyForm) throws ApplicationException {
+        ChangeForm changePropertyForm) throws ApplicationException {
 
         try {
             getNeсessaryData(changePropertyForm);
@@ -62,7 +62,7 @@ public class ObjectPropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public void setPropertyValue(ChangePropertyForm changePropertyForm)
+    public void setPropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -84,7 +84,7 @@ public class ObjectPropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public void addPropertyValue(ChangePropertyForm changePropertyForm)
+    public void addPropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -106,7 +106,7 @@ public class ObjectPropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public void removeOnePropertyValue(ChangePropertyForm changePropertyForm)
+    public void removeOnePropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -128,7 +128,7 @@ public class ObjectPropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public void clearPropertyValue(ChangePropertyForm changePropertyForm)
+    public void clearPropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -148,7 +148,7 @@ public class ObjectPropertyService {
      *
      * @param changePropertyForm
      */
-    private void getNeсessaryData(ChangePropertyForm changePropertyForm) {
+    private void getNeсessaryData(ChangeForm changePropertyForm) {
 
         if (changePropertyForm.getNameProperty() != null
             && !changePropertyForm.getNameProperty().isEmpty()) {

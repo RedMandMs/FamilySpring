@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import ru.etu.mdp.family.domain.ChangePropertyForm;
+import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.exeption.ApplicationException;
 import ru.etu.mdp.family.servises.DataTypePropertyService;
 
@@ -16,13 +16,21 @@ public class DataTypePropertyController {
     @Autowired
     private DataTypePropertyService dataTypePropertyService;
 
-    @RequestMapping(value = "/changeDateTypeProperty", method = RequestMethod.POST)
-    public String changeDataTypeProperty(
-        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyTestForm)
+    @RequestMapping(value = "/setDateTypeProperty", method = RequestMethod.POST)
+    public String setDataTypeProperty(
+        @ModelAttribute("changePropertyForm") ChangeForm changePropertyTestForm)
             throws ApplicationException {
         dataTypePropertyService.setPropertyValue(changePropertyTestForm);
         return "redirect:/";
 
+    }
+
+    @RequestMapping(value = "/deleteDateTypeProperty", method = RequestMethod.POST)
+    public String deleteDataTypeProperty(
+        @ModelAttribute("changePropertyForm") ChangeForm changePropertyTestForm)
+            throws ApplicationException {
+        dataTypePropertyService.deletePropertyValue(changePropertyTestForm);
+        return "redirect:/";
     }
 
 }

@@ -20,16 +20,16 @@ import edu.stanford.smi.protegex.owl.jena.JenaOWLModel;
 @Service("ontologyService")
 public class OntologyService {
 
-    public static final String FILE_NAME = "myOntology.owl";
+    public static final String OWL_FILE_NAME = "family.owl";
 
     public static final String OWL_URI = "http://www.owl-ontologies.com/family.owl#";
 
     public static JenaOWLModel owlModel;
 
-    String owlFileName = "family.owl";
-    File owlFile = new File(owlFileName);
+    File owlFile = new File(OWL_FILE_NAME);
 
-    String testOwlFileName = "test.owl";
+    String testOwlFileName = "newOntology.owl";
+
     File testOwlFile = new File(testOwlFileName);
 
     public void createEmptyOntology(OntologyForm ontologyForm)
@@ -48,7 +48,16 @@ public class OntologyService {
         saveOntology();
     }
 
-    public void readOntology() throws ApplicationException {
+    public void readOntology(OntologyForm ontologyForm) throws ApplicationException {
+        try {
+            owlModel = ProtegeOWL
+                .createJenaOWLModelFromURI(ontologyForm.getUri().toString());
+        } catch (OntologyLoadException e) {
+            throw new ApplicationException(ApplicationErrors.READING_ONTOLOGY_ERROR);
+        }
+    }
+
+    public void readDefoultOntology() throws ApplicationException {
         try {
             owlModel = ProtegeOWL.createJenaOWLModelFromURI(owlFile.toURI().toString());
         } catch (OntologyLoadException e) {
@@ -64,7 +73,7 @@ public class OntologyService {
         }
     }
 
-    public void saveInNewOntology() throws ApplicationException {
+    public void saveInNewFile() throws ApplicationException {
         try {
             owlModel.save(testOwlFile.toURI());
         } catch (Exception e) {

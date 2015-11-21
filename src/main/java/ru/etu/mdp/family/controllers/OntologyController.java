@@ -24,9 +24,28 @@ public class OntologyController {
         return "redirect:/succes";
     }
 
+    @RequestMapping(value = "/readDefoultOntology", method = RequestMethod.POST)
+    public String readDefoultOntology() throws ApplicationException {
+        ontologyService.readDefoultOntology();
+        return "redirect:/";
+    }
+
     @RequestMapping(value = "/readOntology", method = RequestMethod.POST)
-    public String readOntology() throws ApplicationException {
-        ontologyService.readOntology();
+    public String readOntology(@ModelAttribute("OntologyForm") OntologyForm ontologyForm)
+        throws ApplicationException {
+        ontologyService.readOntology(ontologyForm);
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/saveOntology", method = RequestMethod.POST)
+    public String saveOntology() throws ApplicationException {
+        ontologyService.saveOntology();
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/saveInNewFile", method = RequestMethod.POST)
+    public String saveInNewFile() throws ApplicationException {
+        ontologyService.saveInNewFile();
         return "redirect:/";
     }
 

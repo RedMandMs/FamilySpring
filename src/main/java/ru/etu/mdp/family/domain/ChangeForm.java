@@ -2,15 +2,20 @@ package ru.etu.mdp.family.domain;
 
 import edu.stanford.smi.protegex.owl.model.OWLDatatypeProperty;
 import edu.stanford.smi.protegex.owl.model.OWLIndividual;
+import edu.stanford.smi.protegex.owl.model.OWLNamedClass;
 import edu.stanford.smi.protegex.owl.model.OWLObjectProperty;
 
-public class ChangePropertyForm {
+public class ChangeForm {
 
     private String nameIndividual;
 
     private String nameProperty;
 
     private String newValue;
+
+    private String individualClassName;
+
+    private OWLNamedClass individualClass;
 
     private OWLIndividual individual;
 
@@ -84,6 +89,22 @@ public class ChangePropertyForm {
 
     public void setDataTypePropertyValue(Object dataTypePropertyValue) {
         this.dataTypePropertyValue = dataTypePropertyValue;
+    }
+
+    public OWLNamedClass getIndividualClass() {
+        return individualClass;
+    }
+
+    public void setIndividualClass(OWLNamedClass individualClass) {
+        this.individualClass = individualClass;
+    }
+
+    public String getIndividualClassName() {
+        return individualClassName;
+    }
+
+    public void setIndividualClassName(String individualClassName) {
+        this.individualClassName = individualClassName;
     }
 
 }

@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import ru.etu.mdp.family.domain.ChangePropertyForm;
+import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.domain.OntologyForm;
 
 @Controller("/")
@@ -15,7 +15,7 @@ public class MainController {
         ModelAndView modelAndView = new ModelAndView("index");
         OntologyForm ontologyForm = new OntologyForm();
         modelAndView.addObject("ontologyForm", ontologyForm);
-        modelAndView.addObject("changePropertyForm", new ChangePropertyForm());
+        modelAndView.addObject("changePropertyForm", new ChangeForm());
         return modelAndView;
     }
 

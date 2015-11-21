@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import ru.etu.mdp.family.domain.ChangePropertyForm;
+import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.exeption.ApplicationException;
 import ru.etu.mdp.family.servises.ObjectPropertyService;
 
@@ -18,15 +18,23 @@ public class ObjectPropertyController {
 
     @RequestMapping(value = "/setObjectPropertyValue/", method = RequestMethod.POST)
     public String setObjectPropertyValue(
-        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyForm)
+        @ModelAttribute("changePropertyForm") ChangeForm changePropertyForm)
             throws ApplicationException {
         objectPropertyService.setPropertyValue(changePropertyForm);
         return "redirect:/";
     }
 
-    @RequestMapping(value = "/removeObjectPropertyValue/", method = RequestMethod.POST)
-    public String removeObjectPropertyValue(
-        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyForm)
+    @RequestMapping(value = "/addObjectPropertyValue/", method = RequestMethod.POST)
+    public String addObjectPropertyValue(
+        @ModelAttribute("changePropertyForm") ChangeForm changePropertyForm)
+            throws ApplicationException {
+        objectPropertyService.addPropertyValue(changePropertyForm);
+        return "redirect:/";
+    }
+
+    @RequestMapping(value = "/removeOneObjectPropertyValue/", method = RequestMethod.POST)
+    public String removeOneObjectPropertyValue(
+        @ModelAttribute("changePropertyForm") ChangeForm changePropertyForm)
             throws ApplicationException {
         objectPropertyService.removeOnePropertyValue(changePropertyForm);
         return "redirect:/";
@@ -34,7 +42,7 @@ public class ObjectPropertyController {
 
     @RequestMapping(value = "/clearObjectPropertyValue/", method = RequestMethod.POST)
     public String clearObjectPropertyValue(
-        @ModelAttribute("changePropertyForm") ChangePropertyForm changePropertyForm)
+        @ModelAttribute("changePropertyForm") ChangeForm changePropertyForm)
             throws ApplicationException {
         objectPropertyService.clearPropertyValue(changePropertyForm);
         return "redirect:/";

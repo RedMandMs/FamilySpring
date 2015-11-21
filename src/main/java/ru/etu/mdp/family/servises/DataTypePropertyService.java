@@ -3,7 +3,7 @@ package ru.etu.mdp.family.servises;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import ru.etu.mdp.family.domain.ChangePropertyForm;
+import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.exeption.ApplicationErrors;
 import ru.etu.mdp.family.exeption.ApplicationException;
 
@@ -26,7 +26,7 @@ public class DataTypePropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public Object getPropertyValue(ChangePropertyForm changePropertyForm)
+    public Object getPropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -45,7 +45,7 @@ public class DataTypePropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public void deletePropertyValue(ChangePropertyForm changePropertyForm)
+    public void deletePropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -66,7 +66,7 @@ public class DataTypePropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public void setPropertyValue(ChangePropertyForm changePropertyForm)
+    public void setPropertyValue(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         try {
@@ -88,7 +88,7 @@ public class DataTypePropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    private void getNeсessaryData(ChangePropertyForm changePropertyForm)
+    private void getNeсessaryData(ChangeForm changePropertyForm)
         throws ApplicationException {
 
         if (changePropertyForm.getNameProperty() != null
