@@ -15,7 +15,7 @@
 			<form th:action="@{/getIndividual/}" method="post">
 				<h2 th:text="${individual.getLocalName()}"></h2>
 				<input type="text" name="nameIndividual" th:value="${individual.getLocalName()}" hidden="hidden"/>
-				<input type="submit" title="Просмотр"/>
+				<input type="submit" value="Просмотр"/>
 			</form>
 		</th:block>
 	</body>

@@ -16,7 +16,7 @@ public class DataTypePropertyController {
     @Autowired
     private DataTypePropertyService dataTypePropertyService;
 
-    @RequestMapping(value = "/setDateTypeProperty", method = RequestMethod.POST)
+    @RequestMapping(value = "/setDateTypeProperty/", method = RequestMethod.POST)
     public String setDataTypeProperty(
         @ModelAttribute("nameIndividual") String nameIndividual,
         @ModelAttribute("nameProperty") String nameProperty,
@@ -27,7 +27,7 @@ public class DataTypePropertyController {
         changeForm.setNameProperty(nameProperty);
         changeForm.setNewValue(valueProperty);
         dataTypePropertyService.setPropertyValue(changeForm);
-        return "redirect:/";
+        return "redirect:/getIndividual/" + nameIndividual;
 
     }
 

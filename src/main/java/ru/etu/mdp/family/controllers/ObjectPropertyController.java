@@ -18,11 +18,16 @@ public class ObjectPropertyController {
 
     @RequestMapping(value = "/setObjectPropertyValue/", method = RequestMethod.POST)
     public String setObjectPropertyValue(
-        @ModelAttribute("changePropertyForm") ChangeForm changePropertyForm)
+        @ModelAttribute("nameIndividual") String nameIndividual,
+        @ModelAttribute("nameProperty") String nameProperty,
+        @ModelAttribute("valueProperty") String valueProperty)
             throws ApplicationException {
-        objectPropertyService.getAllObjectProperties(changePropertyForm);
-        objectPropertyService.setPropertyValue(changePropertyForm);
-        return "redirect:/";
+        ChangeForm changeForm = new ChangeForm();
+        changeForm.setNameIndividual(nameIndividual);
+        changeForm.setNameProperty(nameProperty);
+        changeForm.setNewValue(valueProperty);
+        objectPropertyService.setPropertyValue(changeForm);
+        return "redirect:/getIndividual/" + nameIndividual;
     }
 
     @RequestMapping(value = "/addObjectPropertyValue/", method = RequestMethod.POST)

@@ -35,8 +35,9 @@ public class DataTypePropertyService {
 
         try {
             getNeсessaryData(changePropertyForm);
-            return changePropertyForm.getIndividual()
+            Object propertyValue = changePropertyForm.getIndividual()
                 .getPropertyValue(changePropertyForm.getDataTypeProperty());
+            return propertyValue;
         } catch (Exception ex) {
             throw new ApplicationException(ApplicationErrors.READING_PROPERTY_ERROR);
         }

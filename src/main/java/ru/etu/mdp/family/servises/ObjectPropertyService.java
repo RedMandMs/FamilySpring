@@ -1,6 +1,9 @@
 package ru.etu.mdp.family.servises;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,6 +14,8 @@ import ru.etu.mdp.family.exeption.ApplicationException;
 
 import edu.stanford.smi.protegex.owl.model.OWLIndividual;
 import edu.stanford.smi.protegex.owl.model.OWLObjectProperty;
+import edu.stanford.smi.protegex.owl.model.RDFObject;
+import edu.stanford.smi.protegex.owl.model.query.QueryResults;
 
 @Service("objectPropertyService")
 public class ObjectPropertyService {
@@ -24,13 +29,25 @@ public class ObjectPropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public OWLIndividual getPropertyValue(ChangeForm changePropertyForm)
-        throws ApplicationException {
-
+    public List<OWLIndividual> getPropertyValue(String nameIndividual,
+        String nameProperty) throws ApplicationException {
+        ChangeForm changeForm = new ChangeForm();
+        changeForm.setNameIndividual(nameIndividual);
+        changeForm.setNameProperty(nameProperty);
         try {
-            getNeсessaryData(changePropertyForm);
-            return (OWLIndividual) changePropertyForm.getIndividual()
-                .getPropertyValue(changePropertyForm.getObjectProperty());
+            getNeсessaryData(changeForm);
+            String sparql_text = "PREFIX f: <http://www.owl-ontologies.com/family.owl#> SELECT ?individual WHERE { f:"
+                + nameIndividual + " f:" + nameProperty + " ?individual.}";
+            QueryResults results = OntologyService.owlModel
+                .executeSPARQLQuery(sparql_text);
+            List<OWLIndividual> result = new ArrayList<>();
+            while (results.hasNext()) {
+                Map map = results.next();
+                RDFObject value = (RDFObject) map.get("individual");
+                result.add(
+                    OntologyService.owlModel.getOWLIndividual(value.getBrowserText()));
+            }
+            return result;
         } catch (Exception ex) {
             throw new ApplicationException(ApplicationErrors.READING_PROPERTY_ERROR);
         }
@@ -111,7 +128,7 @@ public class ObjectPropertyService {
             Collection<OWLObjectProperty> result = changePropertyForm.getIndividual()
                 .getRDFType().getUnionDomainProperties();
 
-            //OntologyService.owlModel.getRDFResourceByNameOrBrowserText();
+            // OntologyService.owlModel.getRDFResourceByNameOrBrowserText();
 
             /*
              * for (OWLNamedClass clazz : OntologyService.owlModel .getOWLNamedClass(
