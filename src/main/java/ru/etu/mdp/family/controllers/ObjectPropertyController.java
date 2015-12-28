@@ -10,7 +10,7 @@ import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.exeption.ApplicationException;
 import ru.etu.mdp.family.servises.ObjectPropertyService;
 
-@Controller("/objectProperty/")
+@Controller("objectProperty/")
 public class ObjectPropertyController {
 
     @Autowired
@@ -20,6 +20,7 @@ public class ObjectPropertyController {
     public String setObjectPropertyValue(
         @ModelAttribute("changePropertyForm") ChangeForm changePropertyForm)
             throws ApplicationException {
+        objectPropertyService.getAllObjectProperties(changePropertyForm);
         objectPropertyService.setPropertyValue(changePropertyForm);
         return "redirect:/";
     }

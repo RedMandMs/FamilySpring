@@ -10,6 +10,7 @@ import ru.etu.mdp.family.exeption.ApplicationErrors;
 import ru.etu.mdp.family.exeption.ApplicationException;
 
 import edu.stanford.smi.protegex.owl.model.OWLIndividual;
+import edu.stanford.smi.protegex.owl.model.OWLObjectProperty;
 
 @Service("objectPropertyService")
 public class ObjectPropertyService {
@@ -43,8 +44,8 @@ public class ObjectPropertyService {
      * @throws ApplicationException
      */
     @SuppressWarnings("unchecked")
-    public Collection<OWLIndividual> getAllPropertyValues(
-        ChangeForm changePropertyForm) throws ApplicationException {
+    public Collection<OWLIndividual> getAllPropertyValues(ChangeForm changePropertyForm)
+        throws ApplicationException {
 
         try {
             getNeсessaryData(changePropertyForm);
@@ -98,6 +99,33 @@ public class ObjectPropertyService {
         }
 
         ontologyService.saveOntology();
+    }
+
+    @SuppressWarnings("unchecked")
+    public Collection<OWLObjectProperty> getAllObjectProperties(
+        ChangeForm changePropertyForm) throws ApplicationException {
+
+        try {
+            getNeсessaryData(changePropertyForm);
+
+            Collection<OWLObjectProperty> result = changePropertyForm.getIndividual()
+                .getRDFType().getUnionDomainProperties();
+
+            //OntologyService.owlModel.getRDFResourceByNameOrBrowserText();
+
+            /*
+             * for (OWLNamedClass clazz : OntologyService.owlModel .getOWLNamedClass(
+             * OntologyService.OWL_URI + changePropertyForm.getIndividualClassName())
+             * .getInferredSuperclasses()) {
+             *
+             * }
+             */
+
+            return result;
+        } catch (Exception e) {
+            throw new ApplicationException(ApplicationErrors.READING_PROPERTY_ERROR);
+        }
+
     }
 
     /**

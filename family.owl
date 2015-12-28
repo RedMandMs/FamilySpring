@@ -70,12 +70,6 @@
     <Parent>
       <Man rdf:ID="Ben">
         <Parent>
-          <Woman rdf:ID="Jane">
-            <Sex rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >female</Sex>
-          </Woman>
-        </Parent>
-        <Parent>
           <Man rdf:ID="Tom">
             <Sex rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >male</Sex>
@@ -83,6 +77,12 @@
             <Age rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
             >85</Age>
           </Man>
+        </Parent>
+        <Parent>
+          <Woman rdf:ID="Jane">
+            <Sex rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >female</Sex>
+          </Woman>
         </Parent>
         <Partner>
           <Woman rdf:ID="Lena">
@@ -100,47 +100,47 @@
   <swrl:Imp rdf:ID="def-Father">
     <swrl:body>
       <swrl:AtomList>
-        <rdf:first>
-          <swrl:ClassAtom>
-            <swrl:classPredicate rdf:resource="#Man"/>
-            <swrl:argument1>
-              <swrl:Variable rdf:ID="x"/>
-            </swrl:argument1>
-          </swrl:ClassAtom>
-        </rdf:first>
         <rdf:rest>
           <swrl:AtomList>
-            <rdf:first>
-              <swrl:ClassAtom>
-                <swrl:classPredicate rdf:resource="#Person"/>
-                <swrl:argument1>
-                  <swrl:Variable rdf:ID="y"/>
-                </swrl:argument1>
-              </swrl:ClassAtom>
-            </rdf:first>
             <rdf:rest>
               <swrl:AtomList>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                 <rdf:first>
                   <swrl:IndividualPropertyAtom>
                     <swrl:propertyPredicate rdf:resource="#Parent"/>
-                    <swrl:argument2 rdf:resource="#y"/>
-                    <swrl:argument1 rdf:resource="#x"/>
+                    <swrl:argument2>
+                      <swrl:Variable rdf:ID="y"/>
+                    </swrl:argument2>
+                    <swrl:argument1>
+                      <swrl:Variable rdf:ID="x"/>
+                    </swrl:argument1>
                   </swrl:IndividualPropertyAtom>
                 </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
               </swrl:AtomList>
             </rdf:rest>
+            <rdf:first>
+              <swrl:ClassAtom>
+                <swrl:classPredicate rdf:resource="#Person"/>
+                <swrl:argument1 rdf:resource="#y"/>
+              </swrl:ClassAtom>
+            </rdf:first>
           </swrl:AtomList>
         </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:argument1 rdf:resource="#x"/>
+            <swrl:classPredicate rdf:resource="#Man"/>
+          </swrl:ClassAtom>
+        </rdf:first>
       </swrl:AtomList>
     </swrl:body>
     <swrl:head>
       <swrl:AtomList>
         <rdf:first>
           <swrl:IndividualPropertyAtom>
-            <swrl:propertyPredicate rdf:resource="#Father"/>
-            <swrl:argument1 rdf:resource="#x"/>
             <swrl:argument2 rdf:resource="#y"/>
+            <swrl:argument1 rdf:resource="#x"/>
+            <swrl:propertyPredicate rdf:resource="#Father"/>
           </swrl:IndividualPropertyAtom>
         </rdf:first>
         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -150,43 +150,31 @@
   <swrl:Imp rdf:ID="def-Brother">
     <swrl:body>
       <swrl:AtomList>
-        <rdf:first>
-          <swrl:ClassAtom>
-            <swrl:argument1 rdf:resource="#x"/>
-            <swrl:classPredicate rdf:resource="#Man"/>
-          </swrl:ClassAtom>
-        </rdf:first>
         <rdf:rest>
           <swrl:AtomList>
-            <rdf:first>
-              <swrl:ClassAtom>
-                <swrl:classPredicate rdf:resource="#Person"/>
-                <swrl:argument1 rdf:resource="#y"/>
-              </swrl:ClassAtom>
-            </rdf:first>
             <rdf:rest>
               <swrl:AtomList>
                 <rdf:rest>
                   <swrl:AtomList>
                     <rdf:rest>
                       <swrl:AtomList>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                         <rdf:first>
                           <swrl:IndividualPropertyAtom>
-                            <swrl:propertyPredicate rdf:resource="#Parent"/>
+                            <swrl:argument2 rdf:resource="#y"/>
                             <swrl:argument1>
                               <swrl:Variable rdf:ID="z"/>
                             </swrl:argument1>
-                            <swrl:argument2 rdf:resource="#y"/>
+                            <swrl:propertyPredicate rdf:resource="#Parent"/>
                           </swrl:IndividualPropertyAtom>
                         </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
                       </swrl:AtomList>
                     </rdf:rest>
                     <rdf:first>
                       <swrl:IndividualPropertyAtom>
-                        <swrl:propertyPredicate rdf:resource="#Parent"/>
                         <swrl:argument2 rdf:resource="#x"/>
                         <swrl:argument1 rdf:resource="#z"/>
+                        <swrl:propertyPredicate rdf:resource="#Parent"/>
                       </swrl:IndividualPropertyAtom>
                     </rdf:first>
                   </swrl:AtomList>
@@ -199,8 +187,20 @@
                 </rdf:first>
               </swrl:AtomList>
             </rdf:rest>
+            <rdf:first>
+              <swrl:ClassAtom>
+                <swrl:argument1 rdf:resource="#y"/>
+                <swrl:classPredicate rdf:resource="#Person"/>
+              </swrl:ClassAtom>
+            </rdf:first>
           </swrl:AtomList>
         </rdf:rest>
+        <rdf:first>
+          <swrl:ClassAtom>
+            <swrl:classPredicate rdf:resource="#Man"/>
+            <swrl:argument1 rdf:resource="#x"/>
+          </swrl:ClassAtom>
+        </rdf:first>
       </swrl:AtomList>
     </swrl:body>
     <swrl:head>
@@ -209,8 +209,8 @@
         <rdf:first>
           <swrl:IndividualPropertyAtom>
             <swrl:propertyPredicate rdf:resource="#Brother"/>
-            <swrl:argument2 rdf:resource="#y"/>
             <swrl:argument1 rdf:resource="#x"/>
+            <swrl:argument2 rdf:resource="#y"/>
           </swrl:IndividualPropertyAtom>
         </rdf:first>
       </swrl:AtomList>

@@ -1,5 +1,9 @@
 package ru.etu.mdp.family.servises;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,6 +12,8 @@ import ru.etu.mdp.family.exeption.ApplicationErrors;
 import ru.etu.mdp.family.exeption.ApplicationException;
 
 import edu.stanford.smi.protegex.owl.model.OWLIndividual;
+import edu.stanford.smi.protegex.owl.model.RDFObject;
+import edu.stanford.smi.protegex.owl.model.query.QueryResults;
 
 @Service("individualService")
 public class IndividualService {
@@ -26,6 +32,47 @@ public class IndividualService {
         getNeсessaryData(changeForm);
         return changeForm.getIndividual();
 
+    }
+
+    /**
+     * Получить все экземпляры по названию класса
+     */
+    public List<OWLIndividual> getAllIndividualByClassName(String className)
+        throws Exception {
+        List<OWLIndividual> result = new ArrayList<>();
+        String sparql_text = "PREFIX f: <http://www.owl-ontologies.com/family.owl#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT ?individual WHERE { ?individual rdf:type f:"
+            + className + ". }";
+        QueryResults results = OntologyService.owlModel.executeSPARQLQuery(sparql_text);
+        while (results.hasNext()) {
+            Map map = results.next();
+            RDFObject value = (RDFObject) map.get("individual");
+            result.add(OntologyService.owlModel.getOWLIndividual(value.getBrowserText()));
+        }
+        return result;
+    }
+
+    /**
+     * Получить всех людей системе
+     */
+    public List<OWLIndividual> getAllHumans() throws Exception {
+        List<OWLIndividual> result = new ArrayList<>();
+        result.addAll(getAllWomen());
+        result.addAll(getAllMen());
+        return result;
+    }
+
+    /**
+     * Получить всех людей женщин в системе
+     */
+    public List<OWLIndividual> getAllWomen() throws Exception {
+        return getAllIndividualByClassName("Woman");
+    }
+
+    /**
+     * Получить всех людей мужчин в системе
+     */
+    public List<OWLIndividual> getAllMen() throws Exception {
+        return getAllIndividualByClassName("Man");
     }
 
     public void createIndividual(ChangeForm changeForm) throws ApplicationException {

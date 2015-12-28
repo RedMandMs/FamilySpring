@@ -5,16 +5,29 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.exeption.ApplicationException;
 import ru.etu.mdp.family.servises.IndividualService;
+
+import edu.stanford.smi.protegex.owl.model.OWLIndividual;
 
 @Controller("/individualController/")
 public class IndividualController {
 
     @Autowired
     private IndividualService individualService;
+
+    @RequestMapping(value = "/getIndividual/", method = RequestMethod.POST)
+    public ModelAndView getIndividual(@ModelAttribute("changeForm") ChangeForm changeForm)
+        throws ApplicationException {
+
+        ModelAndView modelAndView = new ModelAndView("individual");
+        OWLIndividual individual = individualService.getIndividual(changeForm);
+        modelAndView.addObject("individual", individual);
+        return modelAndView;
+    }
 
     @RequestMapping(value = "/createIndividual/", method = RequestMethod.POST)
     public String createIndividual(@ModelAttribute("changeForm") ChangeForm changeForm)
