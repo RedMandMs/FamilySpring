@@ -20,10 +20,13 @@ public class IndividualController {
     private IndividualService individualService;
 
     @RequestMapping(value = "/getIndividual/", method = RequestMethod.POST)
-    public ModelAndView getIndividual(@ModelAttribute("changeForm") ChangeForm changeForm)
-        throws ApplicationException {
+    public ModelAndView getIndividual(
+        @ModelAttribute("nameIndividual") String nameIndividual)
+            throws ApplicationException {
 
         ModelAndView modelAndView = new ModelAndView("individual");
+        ChangeForm changeForm = new ChangeForm();
+        changeForm.setNameIndividual(nameIndividual);
         OWLIndividual individual = individualService.getIndividual(changeForm);
         modelAndView.addObject("individual", individual);
         return modelAndView;

@@ -12,10 +12,10 @@
 		<br/>
 		<br/>
 		<th:block th:each="individual : ${@individualService.getAllHumans()}">
-			<form th:action="@{/getIndividual/}" th:object="${changeForm}" method="post">
+			<form th:action="@{/getIndividual/}" method="post">
 				<h2 th:text="${individual.getLocalName()}"></h2>
-				<p th:field="*{nameIndividual}" th:value="${individual.getName()}"/>
-				<input type="submit" th:text:="Изменить свойства"/>
+				<input type="text" name="nameIndividual" th:value="${individual.getLocalName()}" hidden="hidden"/>
+				<input type="submit" title="Просмотр"/>
 			</form>
 		</th:block>
 	</body>

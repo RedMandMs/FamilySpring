@@ -26,8 +26,12 @@ public class DataTypePropertyService {
      * @param changePropertyForm
      * @throws ApplicationException
      */
-    public Object getPropertyValue(ChangeForm changePropertyForm)
+    public Object getPropertyValue(String nameIndividual, String nameProperty)
         throws ApplicationException {
+
+        ChangeForm changePropertyForm = new ChangeForm();
+        changePropertyForm.setNameIndividual(nameIndividual);
+        changePropertyForm.setNameProperty(nameProperty);
 
         try {
             getNeсessaryData(changePropertyForm);

@@ -18,9 +18,15 @@ public class DataTypePropertyController {
 
     @RequestMapping(value = "/setDateTypeProperty", method = RequestMethod.POST)
     public String setDataTypeProperty(
-        @ModelAttribute("changePropertyForm") ChangeForm changePropertyTestForm)
+        @ModelAttribute("nameIndividual") String nameIndividual,
+        @ModelAttribute("nameProperty") String nameProperty,
+        @ModelAttribute("valueProperty") String valueProperty)
             throws ApplicationException {
-        dataTypePropertyService.setPropertyValue(changePropertyTestForm);
+        ChangeForm changeForm = new ChangeForm();
+        changeForm.setNameIndividual(nameIndividual);
+        changeForm.setNameProperty(nameProperty);
+        changeForm.setNewValue(valueProperty);
+        dataTypePropertyService.setPropertyValue(changeForm);
         return "redirect:/";
 
     }

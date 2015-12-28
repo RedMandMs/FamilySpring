@@ -10,6 +10,10 @@
 		<h1 align="middle" th:text="${individual.getLocalName()}"></h1>
 		<br/>
 		<br/>
+		<form th:action="@{/getIndividual/}" method="post">
+			<h2>Пол:</h2>
+			<input type="text" name="nameProperty" th:value="${@dataTypePropertyService.getPropertyValue(individual.getLocalName(), &#34;sex&#34;)}" hidden="hidden"/>
+		</form>
 		<br/>
 	</body>
 </html>
