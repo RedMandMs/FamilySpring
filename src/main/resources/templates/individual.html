@@ -44,8 +44,10 @@
 			<div>
 			<h2>Пол:</h2>
 			<th:block th:with="sex=${@dataTypePropertyService.getPropertyValue(individual.getLocalName(), &#34;Sex&#34;)}">
-				<p th:if="${sex.equals('male')}" th:text="Мужской"/>
-				<p th:if="${sex.equals('female')}" th:text="Женский"/>
+				<th:block th:if="${sex != null}">	
+					<p th:if="${sex.equals('male')}" th:text="Мужской"/>
+					<p th:if="${sex.equals('female')}" th:text="Женский"/>
+				</th:block>
 				<select name="valueProperty">
 					<option th:value="male" th:text="Мужской"/>
 					<option th:value="female" th:text="Женский"/>
@@ -62,9 +64,8 @@
 			<div>
 			<h2>Отец:</h2>
 			<th:block th:with="father=${@objectPropertyService.getPropertyValue(individual.getLocalName(), &#34;Father&#34;)}">
-			<input th:if="${!father.isEmpty()}" type="text" th:value="${father.get(0).getLocalName()}"/>
-			<input th:if="${father.isEmpty()}" type="text" />
-			<br/>
+			<p th:if="${!father.isEmpty()}" th:text="${father.get(0).getLocalName()}"/>
+			<p th:if="${father.isEmpty()}" />
 			<select name="valueProperty">
 				<th:block th:each="man : ${@individualService.getAllMen()}">
 					<option th:value="${man.getLocalName()}" th:text="${man.getLocalName()}"/>
@@ -80,9 +81,8 @@
 			<div>
 			<h2>Мать:</h2>
 			<th:block th:with="mother=${@objectPropertyService.getPropertyValue(individual.getLocalName(), &#34;Mother&#34;)}">
-			<input th:if="${!mother.isEmpty()}" type="text" th:value="${mother.get(0).getLocalName()}"/>
-			<input th:if="${mother.isEmpty()}" type="text" />
-			<br/>
+			<p th:if="${!mother.isEmpty()}" th:text="${mother.get(0).getLocalName()}"/>
+			<p th:if="${mother.isEmpty()}" />
 			<select name="valueProperty">
 				<th:block th:each="woman : ${@individualService.getAllWomen()}">
 					<option th:value="${woman.getLocalName()}" th:text="${woman.getLocalName()}"/>
@@ -98,9 +98,8 @@
 			<div>
 			<h2>Брат:</h2>
 			<th:block th:with="brother=${@objectPropertyService.getPropertyValue(individual.getLocalName(), &#34;Brother&#34;)}">
-			<input th:if="${!brother.isEmpty()}" type="text" th:value="${brother.get(0).getLocalName()}"/>
-			<input th:if="${brother.isEmpty()}" type="text" />
-			<br/>
+			<p th:if="${!brother.isEmpty()}" th:text="${brother.get(0).getLocalName()}"/>
+			<p th:if="${brother.isEmpty()}" />
 			<select name="valueProperty">
 				<th:block th:each="man : ${@individualService.getAllMen()}">
 					<option th:value="${man.getLocalName()}" th:text="${man.getLocalName()}"/>
@@ -116,9 +115,8 @@
 			<div>
 			<h2>Сестра:</h2>
 			<th:block th:with="sister=${@objectPropertyService.getPropertyValue(individual.getLocalName(), &#34;Sister&#34;)}">
-			<input th:if="${!sister.isEmpty()}" type="text" th:value="${sister.get(0).getLocalName()}"/>
-			<input th:if="${sister.isEmpty()}" type="text" />
-			<br/>
+			<p th:if="${!sister.isEmpty()}" th:text="${sister.get(0).getLocalName()}"/>
+			<p th:if="${sister.isEmpty()}" />
 			<select name="valueProperty">
 				<th:block th:each="woman : ${@individualService.getAllWomen()}">
 					<option th:value="${woman.getLocalName()}" th:text="${woman.getLocalName()}"/>
@@ -134,20 +132,21 @@
 			<div>
 			<h2>Партнёр:</h2>
 			<th:block th:with="partner=${@objectPropertyService.getPropertyValue(individual.getLocalName(), &#34;Partner&#34;)}">
-			<input th:if="${!partner.isEmpty()}" type="text" th:value="${partner.get(0).getLocalName()}"/>
-			<input th:if="${partner.isEmpty()}" type="text" />
-			<br/>
+			<p th:if="${!partner.isEmpty()}" th:text="${partner.get(0).getLocalName()}"/>
+			<p th:if="${partner.isEmpty()}" />
 			<th:block th:with="sex=${@dataTypePropertyService.getPropertyValue(individual.getLocalName(), &#34;Sex&#34;)}">
-				<select name="valueProperty" th:if="${sex.equals('female')}">
-					<th:block th:each="man : ${@individualService.getAllMen()}">
-						<option th:value="${man.getLocalName()}" th:text="${man.getLocalName()}"/>
-					</th:block>
-				</select>
-				<select name="valueProperty" th:if="${sex.equals('male')}">
-					<th:block th:each="woman : ${@individualService.getAllWomen()}">
-						<option th:value="${woman.getLocalName()}" th:text="${woman.getLocalName()}"/>
-					</th:block>
-				</select>
+				<th:block th:if="${sex != null}">
+					<select name="valueProperty" th:if="${sex.equals('female')}">
+						<th:block th:each="man : ${@individualService.getAllMen()}">
+							<option th:value="${man.getLocalName()}" th:text="${man.getLocalName()}"/>
+						</th:block>
+					</select>
+					<select name="valueProperty" th:if="${sex.equals('male')}">
+						<th:block th:each="woman : ${@individualService.getAllWomen()}">
+							<option th:value="${woman.getLocalName()}" th:text="${woman.getLocalName()}"/>
+						</th:block>
+					</select>
+				</th:block>
 			</th:block>
 			<input type="text" name="nameProperty" value="Partner" hidden="hidden"/>
 			<input type="text" name="nameIndividual" th:value="${individual.getLocalName()}" hidden="hidden"/>

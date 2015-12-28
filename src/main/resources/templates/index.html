@@ -9,14 +9,31 @@
 
 		<h1 align="middle">Все экземпяры нашей онтологии:</h1>
 		<br/>
+		<form th:action="@{/createIndividual/}" method="post">
+			<div>
+			<h2>Создать новый экземпляр:</h2>
+			<input type="text" name="nameIndividual"/>
+			<p>Выбрать пол:</p>
+			<select name="nameClass">
+				<option th:value="Man" th:text="Мужской"/>
+				<option th:value="Woman" th:text="Женский"/>
+			</select>
+			<input type="submit" value="Создать"/>
+			</div>
+		</form>
 		<br/>
 		<br/>
 		<th:block th:each="individual : ${@individualService.getAllHumans()}">
+			<h2 th:text="${individual.getLocalName()}"></h2>
 			<form th:action="@{/getIndividual/}" method="post">
-				<h2 th:text="${individual.getLocalName()}"></h2>
 				<input type="text" name="nameIndividual" th:value="${individual.getLocalName()}" hidden="hidden"/>
 				<input type="submit" value="Просмотр"/>
 			</form>
+			<form th:action="@{/deleteIndividual/}" method="post">
+				<input type="text" name="nameIndividual" th:value="${individual.getLocalName()}" hidden="hidden"/>
+				<input type="submit" value="Удалить"/>
+			</form>
+			<br/>
 		</th:block>
 	</body>
 </html>

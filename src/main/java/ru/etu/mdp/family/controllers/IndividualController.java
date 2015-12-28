@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import ru.etu.mdp.family.domain.ChangeForm;
 import ru.etu.mdp.family.exeption.ApplicationException;
+import ru.etu.mdp.family.servises.DataTypePropertyService;
 import ru.etu.mdp.family.servises.IndividualService;
 
 import edu.stanford.smi.protegex.owl.model.OWLIndividual;
@@ -19,6 +20,9 @@ public class IndividualController {
 
     @Autowired
     private IndividualService individualService;
+    
+    @Autowired
+    private DataTypePropertyService dataTypePropertyService;
 
     @RequestMapping(value = "/getIndividual/", method = RequestMethod.POST)
     public ModelAndView getIndividual(
@@ -42,18 +46,29 @@ public class IndividualController {
     }
 
     @RequestMapping(value = "/createIndividual/", method = RequestMethod.POST)
-    public String createIndividual(@ModelAttribute("changeForm") ChangeForm changeForm)
+    public String createIndividual(@ModelAttribute("nameClass") String nameClass, @ModelAttribute("nameIndividual") String nameIndividual)
         throws ApplicationException {
-
+    	ChangeForm changeForm = new ChangeForm();
+    	changeForm.setIndividualClassName(nameClass);
+    	changeForm.setNameIndividual(nameIndividual);
         individualService.createIndividual(changeForm);
-
+        ChangeForm changeForm2 = new ChangeForm();
+        changeForm2.setNameIndividual(nameIndividual);
+    	changeForm2.setNameProperty("Sex");
+        if(nameClass.equals("Man")){
+        	changeForm2.setNewValue("male");
+        }else{
+        	changeForm2.setNewValue("female");
+        }
+        dataTypePropertyService.setPropertyValue(changeForm2);
         return "redirect:/";
     }
 
     @RequestMapping(value = "/deleteIndividual/", method = RequestMethod.POST)
-    public String deleteIndividual(@ModelAttribute("changeForm") ChangeForm changeForm)
+    public String deleteIndividual(@ModelAttribute("nameIndividual") String nameIndividual)
         throws ApplicationException {
-
+    	ChangeForm changeForm = new ChangeForm();
+    	changeForm.setNameIndividual(nameIndividual);
         individualService.deleteIndividual(changeForm);
 
         return "redirect:/";
